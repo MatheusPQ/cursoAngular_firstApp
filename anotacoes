@@ -1,0 +1,16 @@
+Atualizar nodejs e npm
+Instalar a CLI do Angular
+
+npm install -g @angular/CLI
+ng new <nome da aplicacao>
+cd <nome da aplicacao>
+ng serve
+
+npm install --save bootstrap
+    ../node_modules/bootstrap/dist/css/bootstrap.min.css
+        Dentro de 'styles', .angular-cli.json
+
+Angular roda main.ts, e lá vai carregando os módulos, etc.
+
+ng generate component servers
+    ng g c servers
