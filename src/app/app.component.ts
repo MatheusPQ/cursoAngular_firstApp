@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 		h3 {
 			color: dodgerblue;
 		}
-	`] //estilização inline
+	`] 
+	// estilização inline
 })
 export class AppComponent {
 	name = "";
