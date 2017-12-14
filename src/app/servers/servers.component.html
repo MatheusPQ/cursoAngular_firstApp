@@ -7,7 +7,8 @@
 <!-- [()] indica two-way-databinding (usando event e property binding) -->
 <!-- Importar FormsModule (@angular/forms) em imports[] no AppModule para ngModel funcionar -->
 
-<p> {{ serverName }} </p>
+<!-- <p> {{ serverName }} </p> -->
+
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add server</button>
 <!-- [] indica que estamos usando property-binding -->
 <!-- () indica que estamos usando event-binding -->
