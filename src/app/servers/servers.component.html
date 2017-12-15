@@ -1,6 +1,6 @@
 
 <label>Server name</label>
-<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
 <!-- $event é uma palavra reservada -->
 
 <input type="text" class="form-control" [(ngModel)]="serverName">
@@ -21,7 +21,21 @@
 <!-- Property Binding -->
 <!-- <p [innerText]="allowNewServer"></p> -->
 
-<p>{{ serverCreationStatus }}</p>
 
+<!-- <p>{{ serverCreationStatus }}</p> -->
+<p *ngIf="serverCreated">Server was created, server name is {{ serverName }}</p>
+<!-- <p *ngIf="serverCreated; else noServer">Server was created, server name is {{ serverName }}</p> -->
+<!-- * pq ngIf muda a estrutura do DOM (structural directive)/vai adicionar um elemento no DOM. Precisa colocar ela. 
+    Vai colocar o paragrafo acima, se true. Senão, vai mostrar o ng-template abaixo (com marcador noServer) -->
+<!-- <ng-template #noServer>
+    <p>
+        No server was created
+    </p>
+</ng-template> -->
+    
 <app-server></app-server>
 <app-server></app-server>
+
+<!-- 
+    Property binding simply means you're passing data from the component class and setting the value of a given element in the view.
+    Property binding is one way, in that the data is transferred FROM the component TO the class. -->
