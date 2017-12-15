@@ -33,8 +33,8 @@
     </p>
 </ng-template> -->
     
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
+<!-- Tipo forEach. 'servers' é o array no .ts. Cada elemento desse array será chamado de 'server'. -->
 
 <!-- 
     Property binding simply means you're passing data from the component class and setting the value of a given element in the view.
